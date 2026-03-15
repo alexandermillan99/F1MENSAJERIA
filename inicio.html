@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 Mensajería — Tu Pedido, A Un Mensaje de Distancia</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <div class="nav-logo">
+    <span class="f1-badge">F1</span>
+    <span class="logo-text">MENSAJERÍA</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#como-funciona">Cómo Funciona</a></li>
+    <li><a href="#por-que">Por Qué Nosotros</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#" class="btn-login" onclick="openModal()">Iniciar Sesión</a></li>
+  </ul>
+  <a href="#" class="btn-login" style="display:none;text-decoration:none;" id="mob-login" onclick="openModal()">Login</a>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="inicio">
+  <div class="hero-track"></div>
+  <div class="speed-lines">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">⚡ Mensajería Express · Tunja & Colombia</p>
+    <h1 class="hero-title">
+      <span class="red">F1</span><br>
+      MENSAJERÍA
+    </h1>
+    <p class="hero-sub">Tu Pedido, A Un Mensaje De Distancia</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/573000000000" class="cta-primary" target="_blank">📱 Pedir Ahora</a>
+      <a href="#servicios" class="cta-secondary">Ver Servicios</a>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-num">30'</div>
+      <div class="stat-label">Tiempo promedio</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Disponibilidad</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Entregas seguras</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">★4.9</div>
+      <div class="stat-label">Calificación</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ─── -->
+<section id="servicios">
+  <p class="section-label">// Lo que hacemos</p>
+  <h2 class="section-title">NUESTROS<br><span style="color:var(--red)">SERVICIOS</span></h2>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🍔</span>
+      <div class="service-name">Comida & Restaurantes</div>
+      <p class="service-desc">Recibimos tu pedido del restaurante favorito y lo llevamos directo a tu puerta, caliente y rápido.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">📦</span>
+      <div class="service-name">Paquetes & Encomiendas</div>
+      <p class="service-desc">Enviamos paquetes de cualquier tamaño con total seguridad y seguimiento en tiempo real.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💊</span>
+      <div class="service-name">Medicamentos</div>
+      <p class="service-desc">Urgencias médicas no esperan. Recogemos tus medicamentos en la farmacia y los entregamos de inmediato.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🛒</span>
+      <div class="service-name">Supermercado</div>
+      <p class="service-desc">Hacemos tus compras del mercado. Solo envíanos tu lista y nosotros nos encargamos de todo.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">📄</span>
+      <div class="service-name">Documentos</div>
+      <p class="service-desc">Pagos, trámites y documentos entregados con discreción, puntualidad y total confidencialidad.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎁</span>
+      <div class="service-name">Regalos & Sorpresas</div>
+      <p class="service-desc">Sorprende a quien más quieres. Coordinamos la entrega perfecta con el toque especial que merece.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ─── -->
+<section class="how-section" id="como-funciona">
+  <p class="section-label">// Proceso</p>
+  <h2 class="section-title">¿CÓMO<br><span style="color:var(--red)">FUNCIONA?</span></h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-content">
+        <span class="step-icon">💬</span>
+        <div class="step-title">Escríbenos</div>
+        <p class="step-text">Contáctanos por WhatsApp o Instagram con tu pedido. Indicanos qué necesitas, dónde recogerlo y a dónde lo enviamos.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-content">
+        <span class="step-icon">✅</span>
+        <div class="step-title">Confirmamos</div>
+        <p class="step-text">Te enviamos el costo del servicio y confirmamos la disponibilidad. Sin sorpresas, sin cargos ocultos.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-content">
+        <span class="step-icon">🏎️</span>
+        <div class="step-title">Salimos Volando</div>
+        <p class="step-text">Nuestro mensajero recoge tu pedido y va directo a entregarlo. Velocidad F1 garantizada.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div class="step-content">
+        <span class="step-icon">📍</span>
+        <div class="step-title">Entrega Exitosa</div>
+        <p class="step-text">Recibes tu pedido y te notificamos cuando esté entregado. Simple, rápido, confiable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY US ─── -->
+<section id="por-que">
+  <p class="section-label">// Nuestra ventaja</p>
+  <h2 class="section-title">¿POR QUÉ<br><span style="color:var(--red)">ELEGIRNOS?</span></h2>
+
+  <div class="why-grid">
+    <div class="why-visual">
+      <div class="big-f1">F1</div>
+      <div class="why-badge top-right">Velocidad Garantizada</div>
+      <div class="why-badge bottom-left">📍 Domicilios Express</div>
+    </div>
+
+    <div class="why-points">
+      <div class="why-point">
+        <div class="why-dot">🚀</div>
+        <div class="why-text">
+          <h4>Rapidez Comprobada</h4>
+          <p>Promedio de entrega de 30 minutos. Sabemos que tu tiempo es valioso y lo respetamos.</p>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-dot">🔒</div>
+        <div class="why-text">
+          <h4>100% Seguros</h4>
+          <p>Mensajeros verificados, rutas trazadas y seguimiento constante. Tu pedido está en las mejores manos.</p>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-dot">💬</div>
+        <div class="why-text">
+          <h4>Atención Personalizada</h4>
+          <p>Siempre hay alguien listo para atenderte. No bots, no correos: personas reales para ti.</p>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-dot">✅</div>
+        <div class="why-text">
+          <h4>Totalmente Confiables</h4>
+          <p>Cientos de entregas exitosas. Nuestra reputación habla por nosotros: clientes satisfechos siempre vuelven.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA BANNER ─── -->
+<div class="cta-banner" id="contacto">
+  <h2>¿LISTO PARA TU<br>PRIMER PEDIDO?</h2>
+  <p>Escríbenos y en minutos tenemos a alguien en camino</p>
+  <a href="https://wa.me/573000000000" class="cta-white" target="_blank">📱 Escribir por WhatsApp</a>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">
+    <span class="f1-badge">F1</span>
+    <span class="logo-text">MENSAJERÍA</span>
+  </div>
+  <p class="footer-copy">© 2026 F1 Mensajería — Tu pedido, a un mensaje de distancia</p>
+  <div class="footer-social">
+    <a href="#">Instagram</a>
+    <a href="#">WhatsApp</a>
+    <a href="#" onclick="openModal()">Login</a>
+  </div>
+</footer>
+
+<!-- ─── LOGIN MODAL ─── -->
+<div class="modal-overlay" id="loginModal" onclick="handleOverlayClick(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-header">
+      <h3><span style="color:var(--red)">F1</span> LOGIN</h3>
+      <p>Accede a tu cuenta de mensajería</p>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Correo Electrónico</label>
+        <input type="email" placeholder="tu@correo.com">
+      </div>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password" placeholder="••••••••">
+      </div>
+      <button class="form-btn">Ingresar →</button>
+      <p class="form-footer">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
